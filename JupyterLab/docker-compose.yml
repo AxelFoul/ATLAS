@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+
+  notebook:
+    build:
+      context: .
+      dockerfile: Dockerfile_net
+
+    volumes:
+      - /home/petr/Documents/MyDocker/jupyter_octave/work:/home/jovyan/work
+
+    network_mode: "host"
+
+    entrypoint: ["jupyter", "lab", "--no-browser", "--ip=0.0.0.0", "--NotebookApp.token=''", "--NotebookApp.password=''"]
