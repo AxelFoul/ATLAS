@@ -7,7 +7,8 @@
     
     $ sudo chmod +x /usr/local/bin/docker-compose
 
-    and test instalation:
+and test instalation:
+    
     $ docker-compose --version
 
 (2) Clone git repository of ATLAS notebooks to the VM disk:
@@ -17,7 +18,8 @@
 (3) Choose whether you want use just simple notebook or JupyterLab interface (notebook or JupyterLab file, respectively). Go to the desired folder with docker-compose.yml file and open it. Under the volumes change home/address/where/ATLAS/notebooks/are: for particular address where you have saved ATLAS notebooks.
 
 (4) From the folder with docker-compose.yml file run: 
-$ sudo docker-compose up
+
+    $ sudo docker-compose up
 
 (5) Connect to the notebooks via browser using floating IP:8888 (it is necessary to allow port 8888 in openstack - Egress Ingress)
 
