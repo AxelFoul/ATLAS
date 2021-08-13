@@ -15,7 +15,7 @@ and test instalation:
 
     $ sudo git clone https://github.com/atlas-outreach-data-tools/notebooks-collection-opendata.git
 
-(3) Choose whether you want use just simple notebook or JupyterLab interface (notebook or JupyterLab file, respectively). Go to the desired folder with docker-compose.yml file and open it. Under the volumes change home/address/where/ATLAS/notebooks/are: for particular address where you have saved ATLAS notebooks.
+(3) Choose whether you want use just simple notebook or JupyterLab interface (notebook or JupyterLab folder, respectively). Go to the desired folder with docker-compose.yml file and open it. Under the volumes change home/address/where/ATLAS/notebooks/are: for particular address where you have saved ATLAS notebooks.
 
 (4) From the folder with docker-compose.yml file run: 
 
